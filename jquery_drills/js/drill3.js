@@ -1,8 +1,14 @@
 $(function(){
-
-
-    console.log('The dom is ready! (drill 3)');
-    
-
+	$('.ball').hover(
+		function() {
+			$(this).removeClass('ball');
+			.css("background-color", "red");
+		}, function() {
+			$(this).addClass('ball');
+			.css('background-color', 'blue');
+		}
+		);
 });
+
+
 
